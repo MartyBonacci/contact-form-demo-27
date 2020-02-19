@@ -1,0 +1,17 @@
+
+body{
+	background: url(../images/marty-on-mt-taylor.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 100vh;
+}
+
+main{
+	height: 100vh;
+	color: #f26229;
+	font-weight: bold;
+}
+
+h4{
+	font-weight: bold;
+	text-shadow: 1px 1px 5px white;
+}

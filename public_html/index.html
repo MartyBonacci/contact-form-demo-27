@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CONTACT FORM FUN</title>
+
+    <!--	import bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!--	 jQuery Form, Additional Methods, Validate -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
+
+    <!-- Your JavaScript Form Validator -->
+    <script src="js/form-validate.js"></script>
+
+    <!-- Google reCAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <!--	font awesome-->
+    <script src="https://kit.fontawesome.com/258ed8e229.js"></script>
+
+    <!--	my style sheet-->
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+
+</head>
+
+
+<body>
+<main class="d-flex">
+    <div class="container align-self-center">
+        <div class="row">
+            <div class="col-md-6">
+
+                <form id="martys-demo-form" action="../php/" method="post">
+
+                    <div class="form-group">
+                        <h4 for="name">Name <span class="text-danger">*</span></h4>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+				<span class="input-group-text">
+				<i class="fa fa-user" aria-hidden="true"></i>
+					</span>
+                            </div>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Yo Name">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <h4 for="email">Email <span class="text-danger">*</span></h4>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+				<span class="input-group-text">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+					</span>
+                            </div>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                        <h4 for="subject">Subject</h4>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <h4 for="message">Message <span class="text-danger">*</span></h4>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="fa fa-comment" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <textarea class="form-control" rows="5" id="message" name="message" placeholder="What up?"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- reCAPTCHA -->
+                    <div class="g-recaptcha" data-sitekey="6LdpCrMUAAAAAKWG4vQX6z9ulBk9oogYKws33opS"></div>
+
+                    <button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+                    <button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+
+                </form>
+
+                <!--empty area for form error/success output-->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="output-area"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
